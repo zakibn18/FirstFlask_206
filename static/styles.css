@@ -1,0 +1,132 @@
+/* Import Font Keren dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Background Gradient Biru-Ungu Modern */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    /* Animasi muncul dari bawah */
+    animation: fadeInUp 0.8s ease;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #4a4a4a;
+    font-weight: 600;
+}
+
+p.subtitle {
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* Styling Input Form */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+    font-size: 14px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Efek saat input diklik */
+input[type="text"]:focus {
+    border-color: #764ba2;
+    outline: none;
+    box-shadow: 0 0 8px rgba(118, 75, 162, 0.2);
+}
+
+/* Styling Tombol */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+}
+
+/* Styling Halaman Hasil */
+.result-box {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #667eea;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.highlight {
+    color: #764ba2;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #888;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.btn-link:hover {
+    color: #667eea;
+}
+
+/* Keyframes untuk Animasi */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

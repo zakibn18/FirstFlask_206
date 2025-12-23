@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Sapaan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h2>Terima Kasih!</h2>
+        <p class="subtitle">Data Anda telah kami terima</p>
+        
+        <div class="result-box">
+            Halo, <span class="highlight">{{ nama_diterima }}</span>!<br>
+            Senang bisa berkenalan dengan Anda di aplikasi Flask ini.
+        </div>
+
+        <a href="/" class="btn-link">&larr; Kembali ke halaman awal</a>
+    </div>
+</body>
+</html>
